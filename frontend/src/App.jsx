@@ -3,8 +3,9 @@ import Layout from './layout/Layout'
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
+import Register from './pages/Register'
 
-// Ruta privada básica: ajusta la lógica cuando integres auth real
+// Ruta privada básica: ajusta la lógica cuando se integrese auth real
 function PrivateRoute({ children }) {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true'
     return isAuthenticated ? children : <Navigate to="/login" replace />
@@ -16,6 +17,7 @@ function App() {
             <Route element={<Layout />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
                 <Route
                     path="/dashboard"
                     element={

@@ -55,6 +55,9 @@ const Login = () => {
           <button className="w-full py-4 bg-zinc-900 hover:bg-[#B8860B] text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl transition-all shadow-lg active:scale-[0.98]">
             Ingresar al Panel
           </button>
+          <a href="/register" className="mt-3 block w-full py-4 border border-zinc-200 text-zinc-700 hover:border-[#D4AF37] hover:text-[#B8860B] bg-white rounded-xl text-[10px] uppercase font-bold tracking-[0.3em] text-center transition-all shadow-sm">
+            Crear cuenta
+          </a>
         </form>
 
         {/* Footer del Login */}
